@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prusa Research</title>
+    <link rel="shortcut icon" href="Media/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/Content.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+      });
+      
+    </script>
+
+  </head>
+
+  <body>
+    <header>
+      <div id="headerdiv">
+
+        <div id="headerLogodiv">
+          <img src= "Media/Logoforheader.png" alt="Logoforheader" id="HeaderLogo" >  
+        </div>
+
+        <div id="headerText" >
+          <h1> Prusa Research </h1>
+        </div>
+      </div>
+    </header>
+
+    <nav id=mobile_menu></nav>
+    <nav id="nav_menu"> 
+      <ul>
+        <li ><a href="index.html"  >Home</a></li> 
+        <li ><a href="TheTechnology.html" >The Technology</a></li> 
+        <li><a href="ExamplePrints.html">Example Prints</a></li> 
+        <li><a href="NextGeneration.html" class="current">Next Generation</a></li> 
+        <li><a href="NewsLetter.html" >Subscribe</a></li> 
+        
+      </ul></nav>
+    <main>
+
+      <aside>
+        <h2>Example Prints</h2>
+
+        <h3><br><a href = "ExamplePrints.html">Viking</a></h3>
+        <img src="Media/viking.jpg" alt = "Viking">
+
+        <h3><br><a href = "ExamplePrints.html">Skull</a></h3>
+        <img src ="Media/skull.jpg" alt = "skull">
+
+        <h3><br><a href = "ExamplePrints.html">Falcon</a></h3>
+        <img src ="Media/falcon.jpg" alt = "falcon">
+
+
+      </aside>
+      <section>
+        <h2>How do 3D Printers Work?</h2>
+
+        <p></p>
+
+        <h1 class="Move" >SLA 3D Printers</h1>
+        <article>
+          <img src="Media/SLA.jpg" alt="Image description" />
+          <p>Stereolithography (SLA) printing was first invented in the 1980’s and works by curing resin with light. The light solidifies a liquid resin via a process called photo-polymerization and builds objects layer by layer. Currently, SLA is among the most accurate forms of 3D printing. </p>
+
+          <p>There are two main types of SLA Technology: laser based (typically abbreviated as SLA) or projection based (abbreviated DLP for Digital Light Projection).</p>
+          
+       
+
+      <p>The 3D Model is imported into a slicing program like PreForm
+        A tank is filled with liquid photo-polymer resin </p>
+        
+          <p>A build platform lowers into the tank and one layer of the design is traced by a UV laser. The laser is positioned using galvanometers which are sets of mirrors that rotate and reflect the laser. </p>
+        
+          <p>The liquid resin hardens into a solid creating a single layer of the object. This process is repeated and the build platform raises until the object completes.</p>
+
+
+        </article>
+
+        
+      </section>
+      
+
+    </main> 
+    <footer>
+
+      <p>&copy; 2018  Prusa Research s.r.o., info@prusa3d.com
+
+      </p>
+
+    </footer> 
+  </body>
+</html>

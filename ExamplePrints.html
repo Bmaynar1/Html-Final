@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prusa Research</title>
+    <link rel="shortcut icon" href="Media/favicon-16x16.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/Content.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+      });
+    </script>
+
+  </head>
+
+  <body>
+    <header>
+      <div id="headerdiv">
+
+        <div id="headerLogodiv">
+          <img src= "Media/Logoforheader.png" alt="Logoforheader" id="HeaderLogo" >  
+        </div>
+
+        <div id="headerText" >
+          <h1> Prusa Research </h1>
+        </div>
+      </div>
+    </header>
+
+    <nav id=mobile_menu></nav>
+    <nav id="nav_menu"> 
+      <ul>
+        <li ><a href="index.html"  >Home</a></li> 
+        <li ><a href="TheTechnology.html" >The Technology</a></li> 
+        <li><a href="ExamplePrints.html" class="current">Example Prints</a></li> 
+        <li><a href="NextGeneration.html">Next Generation</a></li> 
+        <li><a href="NewsLetter.html" >Subscribe</a></li> 
+      </ul></nav>
+    <main>
+      <section style= width:760px;>
+        
+
+       
+
+        <h1>Example Prints</h1>
+        <div id=exampleprints>
+          
+          
+         
+          <img src="Media/viking.jpg" alt="Image description" />
+          <img src="Media/skull.jpg" alt="Image description" />
+          <img src="Media/falcon.jpg" alt="Image description" />
+          
+          <video controls  style="width:90%">
+            <source src="Media/Prusa%20i3%20MK2%203D%20print%20CASTLE%20time-lapse%20(2).mp4" type="video/mp4">
+          </video>
+        </div>
+
+        
+
+      </section>
+
+      
+    </main> 
+    <footer>
+
+      <p>&copy; 2018  Prusa Research s.r.o., info@prusa3d.com
+
+      </p>
+
+    </footer> 
+  </body>
+</html>

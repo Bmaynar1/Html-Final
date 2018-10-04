@@ -1,0 +1,279 @@
+Html{
+  background-color: #e35700;
+  width: 100%;
+}
+
+body{
+  width: 90%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.12);
+  border: solid
+}
+
+                  /* CSS For Header */
+header {
+  padding: 1.5em 0 2em 0;
+  border-bottom: solid .2em black;
+  background: white;
+}
+
+#HeaderLogo {
+  width: 30%;
+  height: 10vw;
+  width: 10vw;
+  float: left;
+}
+
+#headerText{
+  width:100%;
+
+}
+
+header h1 {
+  font-size: 8vw;
+  padding-bottom: .1em;
+  margin:  .1em;
+}
+
+
+/* Nav menu */
+
+#nav_menu ul{
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#nav_menu ul li{
+  float: left;
+  width: 20%
+}
+
+
+#nav_menu ul li a{
+  display: block;
+  font-size: 1em;
+  text-align: center;
+  padding: 1em 0em;
+  text-decoration-line: none;
+  background-color: #e35700;
+  color: white;
+  font-weight:bold;
+
+}
+
+#nav_menu a.current{
+  color: yellow;
+}
+
+#nav_menu ul li:hover > ul{
+  display: block;
+}
+
+#nav_menu ul ul{
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+#nav_menu ul ul li{
+  float: none;
+}
+
+#nav_menu > ul::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+/* styles for any links */
+a:hover {
+  font-style: italic;
+}
+a:focus {
+  font-style: italic;
+}
+
+/* Main and aside*/
+main {
+  clear: left;
+  margin: .8em;
+
+}
+section{
+  width: 70%;
+  float: left;
+  padding: 0px 20px 20px 20px; 
+}
+section h1{
+  font-size: 150%;
+  padding: .5em 0em .25em;
+  margin: 0;
+}
+section h2 {
+  font-size: 130%;
+  color: #800000;
+  padding-top: .5em;
+  padding-bottom:.25em;
+}
+section article{
+  padding: .5em 0em;
+  border-bottom: 2px solid #800000;
+  border-top: 2px solid #800000;
+}
+
+section q{
+  font-size: 90%;
+  font-style: italic;
+}
+
+section article img{
+  width: 10em;
+  float: right;
+  margin: 1em;
+  border: 1px solid black;
+}
+
+article h2{
+  padding-top: 0;
+}
+
+article h3{
+  font-size: 105%;
+  padding-bottom: .25em;
+}
+
+
+}
+section p {
+  padding-bottom: .5em;
+}
+section blockquote {
+  padding-left: 2em;
+  padding-right: 2em;
+  font-style: italic;
+}
+section ul {
+  padding-bottom: .25em;
+  padding-left: 1.25em;
+  list-style: circle;
+
+}
+section li {
+  padding-bottom: .35em;
+}
+
+aside{
+  width:12%; 
+  float: left;
+}  
+aside h2 {
+  font-size: 150%;
+  color: #800000;
+  padding-top: .5em;
+  padding-bottom:.25em;
+}
+aside h3 {
+  font-size: 105%;
+  padding-bottom: .25em;
+}
+aside img {
+  width: 8em;
+  padding-bottom: 1em;
+}
+
+
+asideRight{
+  width:12%; 
+  float: right;
+} 
+
+
+/* the styles for the footer */
+footer {
+  background-color: #e35700;
+  clear: both;
+}
+footer p {
+  color: white;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/* Mobile*/
+
+#mobile_menu{
+  display: none;
+}
+
+
+/*Tablet*/
+@media only screen and (max-width: 959px){
+  section h1{font-size: 135%;}
+  section h2,aside h2{font-size: 120%;}  
+  aside img{ width: 90px;}
+  asideRight{
+    float: none;
+    padding: padding: 0 0 2.5% 2.5%;
+    width: 95%;
+  }
+  section{
+    float: none;
+    width: 95%; 
+  }
+  aside{
+    float: none;
+    padding: padding: 0 0 2.5% 2.5%;
+    width: 95%;
+  }
+}
+
+/*phone in LandScape*/
+@media only screen and (max-width: 767px){
+  header img{float: none;}
+  header{text-align: center;} 
+
+  section{
+    float: none;
+    width: 95%; 
+  }
+
+  aside{
+    float: none;
+    padding: padding: 0 0 2.5% 2.5%;
+    width: 95%;
+  }
+  
+  asideRight{
+    float: none;
+    padding: padding: 0 0 2.5% 2.5%;
+    width: 95%;
+  }
+  section article img{max-width: 30%}
+
+  #GuestSpeakers{
+    column-count: 2;
+  }
+  #nav_menu{
+    display: none;
+  }
+
+  #mobile_menu{
+    display: block;
+  }
+
+  .slicknav_menu {
+    background-color: #e35700 !important;
+  }
+
+  /*phone in Portrait*/
+  @media only screen and (max-width: 479px){
+    body {font-size: 90%}
+  }
+}
